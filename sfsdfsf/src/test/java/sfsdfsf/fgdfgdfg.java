@@ -10,9 +10,10 @@ public class fgdfgdfg {
 		
 	@Test
 	public void ewwerdsf() {
-		RestAssured.baseURI = "";
+		RestAssured.baseURI = "https://bookstore.toolsqa.com/";
 		RequestSpecification httprequest = RestAssured.given();
-		Response response = httprequest.get();
+		Response response = httprequest.get("/BookStore/v1/Books");
 		System.out.println(response.asPrettyString());
+		
 	}
 }
